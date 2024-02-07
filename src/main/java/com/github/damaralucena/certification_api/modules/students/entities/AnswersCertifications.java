@@ -9,13 +9,13 @@ import java.util.UUID;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class AnswersCertification {
+public class AnswersCertifications {
 
   private UUID id;
-  private UUID certificationId;
-  private UUID studentId;
-  private UUID questionId;
-  private UUID answerId;
+  private UUID certificationID;
+  private UUID studentID;
+  private UUID questionID;
+  private UUID answerID;
   private boolean isCorrect;
 
 }

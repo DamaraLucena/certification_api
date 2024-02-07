@@ -13,10 +13,10 @@ import java.util.UUID;
 public class CertificationStudent {
 
   private UUID id;
-  private UUID studentId;
+  private UUID studentID;
   private String technology;
-  private int grate;
-  List<AnswersCertification> answersCertifications;
+  private int grade;
+  List<AnswersCertifications> answersCertifications;
 
 
 }

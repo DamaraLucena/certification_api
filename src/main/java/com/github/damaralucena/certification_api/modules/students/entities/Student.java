@@ -14,6 +14,6 @@ public class Student {
 
   private UUID id;
   private String email;
-  private List<CertificationStudent> certificationStudents;
+  private List<CertificationStudent> certificationStudent;
 
 }
