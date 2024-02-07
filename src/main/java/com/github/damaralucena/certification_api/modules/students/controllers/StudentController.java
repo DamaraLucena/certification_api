@@ -1,6 +1,7 @@
 package com.github.damaralucena.certification_api.modules.students.controllers;
 
 
+import com.github.damaralucena.certification_api.modules.students.dto.StudentCertificationAnswerDTO;
 import com.github.damaralucena.certification_api.modules.students.useCases.VerifyIfHasCertificationUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -16,10 +17,10 @@ public class StudentController {
   private VerifyIfHasCertificationUseCase verifyIfHasCertificationUseCase;
 
   @PostMapping("/verifyIfHasCertification")
-  public String verifyIfHasCertification(@RequestBody VerifyHasCertificationDTO verifyHasCertificationDTO) {
+  public String verifyIfHasCertification(@RequestBody StudentCertificationAnswerDTO studentCertificationAnswerDTO) {
     // Email
     // Technology
-    var result = this.verifyIfHasCertificationUseCase.execute(verifyHasCertificationDTO);
+    var result = this.verifyIfHasCertificationUseCase.execute(studentCertificationAnswerDTO);
     if (result) {
       return "Usuário já fez a prova";
     }

@@ -19,7 +19,6 @@ public class CertificationStudent {
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
-  private UUID studentID;
 
   @Column(length = 100)
   private String technology;
@@ -28,7 +27,7 @@ public class CertificationStudent {
   private int grade;
 
   @JoinColumn(name = "student_id")
-  private UUID studentId;
+  private UUID studentID;
 
   @ManyToOne
   @JoinColumn(name = "student_id", insertable = false, updatable = false)
@@ -40,6 +39,5 @@ public class CertificationStudent {
 
   @CreationTimestamp
   private LocalDateTime createdAt;
-
 
 }

@@ -15,7 +15,7 @@ public class StudentCertificationAnswersUseCase {
     // Verificar se usuário ele existe
     var student = studentRepository.findByEmail(dto.getEmail());
 
-    if(student)
+    //if(student)
 
     // Buscar as alternativas das perguntas
     // - Correct ou Incorreta
