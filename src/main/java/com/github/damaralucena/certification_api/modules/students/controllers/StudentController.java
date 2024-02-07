@@ -1,7 +1,6 @@
 package com.github.damaralucena.certification_api.modules.students.controllers;
 
 
-import com.github.damaralucena.certification_api.modules.students.dto.VerifyHasCertificationDTO;
 import com.github.damaralucena.certification_api.modules.students.useCases.VerifyIfHasCertificationUseCase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

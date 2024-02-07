@@ -37,7 +37,7 @@ public class AnswersCertifications {
   @Column(name = "question_id")
   private UUID questionID;
 
-  @Column(name = "answer_Id")
+  @Column(name = "answer_id")
   private UUID answerID;
 
   @Column(name = "is_correct")
